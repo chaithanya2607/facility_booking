@@ -2,6 +2,7 @@ body{
     background-image: radial-gradient(white,lightblue);
     display: grid;
     grid-template-columns: auto auto;
+    
 }
 input,select{
     border:0px solid white;
@@ -23,7 +24,11 @@ label,h5{
 }
 h1{
     font-weight: bold;
+    margin:30px;
 }
 #button{
     margin-left:50px;
+}
+h5{
+    margin:20px;
 }

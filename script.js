@@ -17,6 +17,7 @@ var price1 = 300;
 var price2 = 500;
 var price3 = 150;
 var arr = [];
+var tim2=[];
 
 
 function Facilitytable(event) {
@@ -72,10 +73,12 @@ function Facilitytable(event) {
         if(arr[i]==`${facility.value},${date.value},${t1},${t2}`){
             result.innerText="Booking Failed,Already booked";
         }
-        else{
-            console.log("booked");
-        }
+        else if(tim2[i]==`${t2}`){
+          result.innerText="Booking Failed,Already booked";
+        }  
+        
     }
+    tim2.push(`${t2}`);
     arr.push(`${facility.value},${date.value},${t1},${t2}`);
     console.log(arr);
     
