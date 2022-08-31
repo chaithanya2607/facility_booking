@@ -73,12 +73,12 @@ function Facilitytable(event) {
         if(arr[i]==`${facility.value},${date.value},${t1},${t2}`){
             result.innerText="Booking Failed,Already booked";
         }
-        else if(tim2[i]==`${t2}`){
+        else if(tim2[i]==`${facility.value},${t2}`){
           result.innerText="Booking Failed,Already booked";
         }  
         
     }
-    tim2.push(`${t2}`);
+    tim2.push(`${facility.value},${t2}`);
     arr.push(`${facility.value},${date.value},${t1},${t2}`);
     console.log(arr);
     
